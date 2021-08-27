@@ -1,0 +1,62 @@
+{
+    "this_prefix": "a14",
+    "limit_key": "1",
+    "explode_limit": "4",
+    "member_length": "12",
+    "prefix": "a14",
+    "db_host": "localhost",
+    "db_name": "a14",
+    "db_user": "root",
+    "db_pass": "",
+    "concurrency": "1",
+    "account": "qqaaccdd2",
+    "password": "qaz1234wsx",
+    "db_connection": {
+        "agency": "a14",
+        "money_system": "a14"
+    },
+    "log": {
+        "length_error": "member_log/length_error.csv",
+        "repeat": "member_log/repeat.csv",
+        "name_error": "member_log/name_error.csv",
+        "agency_name_error": "agency_log/name_error.csv",
+        "agency_length_error": "agency_log/length_error.csv",
+        "bank_error": "agency_log/bank_error.csv",
+        "banknum_error": "agency_log/banknum_error.csv"
+    },
+    "url": "https://arxntfea14.sharksu.com/",
+    "headers": [
+        "Cookie: urlColor=agent%2FAccountServlet%3Frate%3D5%26bool%3D5; JSESSIONID=57FF4340DB851BE0578524FEC713262C; route=803e9b55e31ec8a75d8187adf133bde4; unknown=16D2F3421D9A5FB6D10A9636E0DDCE79",
+        "Host: arxntfea14.sharksu.com",
+        "Origin: https://arxntfea14.sharksu.com",
+        "Referer: https://arxntfea14.sharksu.com/agent/AccountServlet?id=&type=1&order=create_time&status=&bool=5&rate=5",
+        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+    ],
+    "header": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cache-Control": "max-age=0",
+        "Connection": "keep-alive",
+        "Content-Length": "219",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": "urlColor=agent%2FAccountServlet%3Frate%3D5%26bool%3D5; JSESSIONID=57FF4340DB851BE0578524FEC713262C; route=803e9b55e31ec8a75d8187adf133bde4; unknown=16D2F3421D9A5FB6D10A9636E0DDCE79",
+        "Host": "arxntfea14.sharksu.com",
+        "Origin": "https://arxntfea14.sharksu.com",
+        "Referer": "https://arxntfea14.sharksu.com/agent/AccountServlet?id=&type=1&order=create_time&status=&bool=5&rate=5",
+        "sec-ch-ua": "'Chromium';v='92', ' Not A;Brand';v='99', 'Google Chrome';v='92'",
+        "sec-ch-ua-mobile": "?0",
+        "Sec-Fetch-Dest": "frame",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+    },
+    "reg_url": {
+        "member_index": "agent/AccountServlet",
+        "member_activebet": "member/dml/",
+        "member_balance": "member/balance/",
+        "member_edit": "member/edit/"
+    }
+}

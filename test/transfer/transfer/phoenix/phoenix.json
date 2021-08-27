@@ -1,0 +1,21 @@
+{
+  "member_length"         : "12",
+  "prefix"                : "v66",
+  "db_host"               : "localhost",
+  "db_user"               : "root",
+  "db_pass"               : "",
+  "concurrency"           : "1",
+  "account"               : "js01",
+  "password"              : "aa123123",
+  "url"                   : "http://090-8.com/",
+  "header"                : {
+    "0" : "Cookie: say=yibo88813.78.85.146; say=yibo88813.78.85.146; SESSION=1b9437a4-d22d-4bae-a2ac-1380167fadc2",
+    "1" : "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
+    "2" : "X-Requested-With: XMLHttpRequest"
+  },
+  "log"                   : {
+    "length_error"  : "member_log/length_error.csv",
+    "repeat"        : "member_log/repeat.csv",
+    "name_error"    : "member_log/name_error.csv"
+  }
+}

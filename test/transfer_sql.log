@@ -1,0 +1,92 @@
+CREATE TABLE `tmp_wls_account` (
+  `uid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` int(11) DEFAULT NULL,
+  `useracc` varchar(31) COLLATE utf8_bin NOT NULL,
+  `balance` decimal(15,2) NOT NULL DEFAULT '0.00',
+  `mobile` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(127) COLLATE utf8_bin DEFAULT NULL,
+  `wechat` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `qqskype` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `username` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `bank` varchar(150) COLLATE utf8_bin DEFAULT NULL,
+  `banknum` varchar(150) COLLATE utf8_bin DEFAULT NULL,
+  `bankaddress` varchar(150) CHARACTER SET utf8 DEFAULT NULL,
+  `province` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `city` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `registed_at` datetime DEFAULT NULL,
+  `lastlogin_at` datetime DEFAULT NULL,
+  `last_d_date` datetime DEFAULT NULL,
+  `last_w_date` datetime DEFAULT NULL,
+  `status` tinyint(3) unsigned DEFAULT '0',
+  `birthday` date DEFAULT NULL,
+  `deposit` decimal(15,2) DEFAULT '0.00',
+  `deposit_count` int(11) NOT NULL DEFAULT '0',
+  `withdrawal` decimal(15,2) DEFAULT '0.00',
+  `withdrawal_count` int(11) NOT NULL DEFAULT '0',
+  `level` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `remark` text COLLATE utf8_bin,
+  `activebet` decimal(16,2) DEFAULT '0.00',
+  `payout` decimal(15,2) DEFAULT '0.00',
+  `chinese_nickname` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `english_nickname` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `check_login` tinyint(1) unsigned DEFAULT '0',
+  `check_ccl` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `check_detail` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `check_pop` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `check_d_w` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `upperagent` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `check_ccl_all` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`uid`) USING BTREE,
+  UNIQUE KEY `useracc` (`useracc`) USING BTREE,
+  UNIQUE KEY `userid` (`userid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+
+
+
+
+
+CREATE TABLE `tmp_wls_agent` (
+  `uid` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` int(11) DEFAULT NULL,
+  `useracc` varchar(31) COLLATE utf8_bin NOT NULL,
+  `balance` decimal(14,2) NOT NULL DEFAULT '0.00',
+  `mobile` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `email` varchar(127) COLLATE utf8_bin DEFAULT NULL,
+  `qqskype` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `username` varchar(15) COLLATE utf8_bin DEFAULT NULL,
+  `bank` varchar(150) COLLATE utf8_bin DEFAULT NULL,
+  `banknum` varchar(150) COLLATE utf8_bin DEFAULT NULL,
+  `registed_at` datetime DEFAULT NULL,
+  `province` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `city` varchar(63) COLLATE utf8_bin DEFAULT NULL,
+  `upperagent` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `status` tinyint(3) unsigned DEFAULT '0',
+  `group_category` int(1) DEFAULT NULL,
+  `check` varchar(20) COLLATE utf8_bin DEFAULT NULL,
+  `check_ccl` int(1) unsigned NOT NULL DEFAULT '0',
+  `birthday` date DEFAULT NULL,
+  `check_bank` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `check_creditlimit` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `wechat` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `chinese_nickname` varchar(31) CHARACTER SET utf8 DEFAULT NULL,
+  `english_nickname` varchar(31) COLLATE utf8_bin DEFAULT NULL,
+  `remark` text COLLATE utf8_bin,
+  `check_detail` int(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`uid`) USING BTREE,
+  UNIQUE KEY `useracc` (`useracc`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+
+
+
+
+
+
+CREATE TABLE `tmp_wls_bank_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bankstr` varchar(63) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `bank_db_id` varchar(7) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
