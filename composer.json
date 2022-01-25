@@ -1,6 +1,7 @@
 {
     "require": {
         "algolia/algoliasearch-client-php": "^3.0",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "thiagoalessio/tesseract_ocr": "*"
     }
 }
